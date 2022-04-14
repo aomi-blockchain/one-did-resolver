@@ -8,9 +8,6 @@
   "directories": {
     "lib": "lib"
   },
-  "exports": {
-    ".": "./lib/index.js"
-  },
   "scripts": {
     "build": "tsc -d",
     "watch": "tsc -d && tsc -w",
