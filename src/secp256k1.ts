@@ -1,7 +1,7 @@
 import u8a from 'uint8arrays';
 import { fingerprintParse } from './fingerprint';
 
-function keyToDidDoc(pubKeyBytes, fingerprint) {
+function keyToDidDoc(pubKeyBytes: Uint8Array, fingerprint: string) {
 
   const [flag] = fingerprintParse(fingerprint);
   const did = `did:one:${fingerprint}`;

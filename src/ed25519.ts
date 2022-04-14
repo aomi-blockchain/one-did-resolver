@@ -1,8 +1,7 @@
 import u8a from 'uint8arrays';
-import { decodeBase64 } from 'dids/lib/utils';
 import { fingerprintParse } from './fingerprint';
 
-export function keyToDidDoc(pubKeyBytes, fingerprint) {
+export function keyToDidDoc(pubKeyBytes: Uint8Array, fingerprint: string) {
 
   const [flag] = fingerprintParse(fingerprint);
 

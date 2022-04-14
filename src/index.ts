@@ -1,7 +1,7 @@
 import multibase from 'multibase';
 import varint from 'varint';
 import * as secp256k1 from './secp256k1';
-import * as ed25519  from './ed25519';
+import * as ed25519 from './ed25519';
 
 const DID_LD_JSON = 'application/did+ld+json';
 const DID_JSON = 'application/did+json';
