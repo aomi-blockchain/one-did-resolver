@@ -1,7 +1,8 @@
 import u8a from 'uint8arrays';
 import { fingerprintParse } from './fingerprint';
+import { KeyToDidDocFunc } from './KeyToDidDoc';
 
-function keyToDidDoc(pubKeyBytes: Uint8Array, fingerprint: string) {
+export const keyToDidDoc: KeyToDidDocFunc = async (pubKeyBytes: Uint8Array, fingerprint: string) => {
 
   const [flag] = fingerprintParse(fingerprint);
   const did = `did:one:${fingerprint}`;
@@ -22,4 +23,4 @@ function keyToDidDoc(pubKeyBytes: Uint8Array, fingerprint: string) {
     capabilityDelegation: [keyId],
     capabilityInvocation: [keyId]
   };
-}
+};

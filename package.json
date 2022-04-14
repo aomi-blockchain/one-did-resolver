@@ -17,6 +17,7 @@
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
+    "did-resolver": "^3.2.0",
     "dids": "^2.4.3",
     "multibase": "^4.0.6",
     "varint": "^6.0.0"
